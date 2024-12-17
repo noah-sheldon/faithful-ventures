@@ -12,20 +12,25 @@ import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center min-h-screen px-6 space-y-12">
+    <main className="flex flex-col items-center min-h-screen px-6 space-y-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* Hero Section */}
-      <section className="w-full text-center py-24 bg-gray-100 dark:bg-gray-900 rounded-lg">
+      <section className="w-full text-center py-24 bg-gray-50 rounded-lg shadow-md">
         <div className="space-y-6">
-          <h1 className="text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h1 className="text-5xl font-extrabold tracking-tight text-gray-800">
             Empowering Your Vision
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Faithful VC provides innovative software solutions tailored to your
             needs.
           </p>
           <div className="flex justify-center gap-4">
-            <Button className="text-lg">Get in Touch</Button>
-            <Button variant="outline" className="text-lg">
+            <Button className="bg-[#2BAA8E] text-white hover:bg-[#228F75] transition-transform transform hover:scale-105">
+              Get in Touch
+            </Button>
+            <Button
+              variant="outline"
+              className="border-[#2BAA8E] text-[#2BAA8E] hover:bg-[#2BAA8E] hover:text-white transition-transform transform hover:scale-105"
+            >
               Learn More <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
@@ -33,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="w-full py-12">
+      <section className="w-full py-16">
         <h2 className="text-4xl font-bold text-center mb-8">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
@@ -43,13 +48,15 @@ export default function Home() {
           ].map((service, idx) => (
             <Card
               key={idx}
-              className="hover:shadow-lg transition-shadow duration-300"
+              className="hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
             >
               <CardHeader>
-                <CardTitle className="text-xl">{service}</CardTitle>
+                <CardTitle className="text-2xl text-center">
+                  {service}
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-center">
                   Providing scalable and tailored software solutions.
                 </p>
               </CardContent>
@@ -58,8 +65,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Us Preview */}
+      <section className="w-full py-12">
+        <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
+        <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center leading-relaxed">
+          At Faithful VC, we are passionate about helping businesses achieve
+          their goals with technology. Whether you're just starting or scaling
+          up, we provide innovative and reliable software solutions tailored to
+          your needs.
+        </p>
+      </section>
+
       {/* Testimonials */}
-      <section className="w-full py-12 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      <section className="w-full py-12 bg-gray-100 dark:bg-gray-800 rounded-lg">
         <h2 className="text-4xl font-bold text-center mb-8">
           What Our Clients Say
         </h2>
@@ -68,15 +86,17 @@ export default function Home() {
             {
               name: "John Doe",
               feedback:
-                "Faithful VC transformed our software development process.",
+                "Faithful VC helped us streamline our software process.",
             },
             {
               name: "Jane Smith",
-              feedback:
-                "Professional and reliable solutions that exceeded our expectations.",
+              feedback: "Reliable, innovative, and professional solutions!",
             },
           ].map((testimonial, idx) => (
-            <Card key={idx} className="hover:shadow-md">
+            <Card
+              key={idx}
+              className="hover:shadow-lg transition duration-300 transform hover:-translate-y-2"
+            >
               <CardContent>
                 <p className="italic">{`"${testimonial.feedback}"`}</p>
                 <p className="mt-4 text-right font-bold">{testimonial.name}</p>
@@ -86,84 +106,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Portfolio Preview */}
-      <section className="w-full py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">Our Portfolio</h2>
-        <div className="flex justify-center gap-8">
-          <Card className="w-64 hover:shadow-lg">
-            <CardContent>
-              <p className="text-center font-semibold mt-2">Project 1</p>
-            </CardContent>
-          </Card>
-          <Card className="w-64 hover:shadow-lg">
-            <CardContent>
-              <p className="text-center font-semibold mt-2">Project 2</p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="w-full text-center py-12 bg-blue-100 rounded-lg">
-        <h2 className="text-3xl font-semibold">Ready to Work With Us?</h2>
-        <Button className="mt-6 text-lg">Contact Us</Button>
-      </section>
-
-      {/* About Us Preview */}
-      <section className="w-full py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center">
-          Faithful VC is dedicated to providing exceptional software solutions
-          that align with your vision.
+      <section className="w-full text-center py-16 bg-[#2BAA8E] text-white rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold">Let’s Work Together</h2>
+        <p className="mt-4 text-lg">
+          Schedule a consultation to see how we can bring your ideas to life.
         </p>
+        <Button className="mt-6 bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg">
+          Schedule a Call
+        </Button>
       </section>
 
-      {/* Metrics */}
+      {/* Metrics Section */}
       <section className="w-full py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">Our Impact</h2>
+        <h2 className="text-4xl font-bold text-center mb-8">
+          Why Work With Us
+        </h2>
         <div className="flex justify-around">
-          <div className="text-center">
-            <h3 className="text-4xl font-bold">100+</h3>
-            <p>Projects Delivered</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold">5+</h3>
-            <p>Years Experience</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold">50+</h3>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="w-full py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">FAQs</h2>
-        <Accordion type="single" collapsible>
-          <AccordionItem value="faq1">
-            <AccordionTrigger>What services do you provide?</AccordionTrigger>
-            <AccordionContent>
-              We offer consulting, custom software development, and product
-              innovation.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="faq2">
-            <AccordionTrigger>How can we contact you?</AccordionTrigger>
-            <AccordionContent>
-              You can use our contact form or email us at info@faithfulvc.com.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </section>
-
-      {/* Newsletter Signup */}
-      <section className="w-full py-12 text-center bg-gray-50 rounded-lg">
-        <h2 className="text-3xl font-bold">Stay Updated</h2>
-        <p className="text-gray-500 mt-2">Sign up for our newsletter.</p>
-        <div className="mt-6 flex justify-center gap-2">
-          <Input placeholder="Enter your email" className="w-64" />
-          <Button>Subscribe</Button>
+          {[
+            { label: "Expert Developers", value: "Top Talent" },
+            { label: "Scalable Solutions", value: "Future-Proof" },
+            { label: "Reliable Support", value: "24/7" },
+          ].map((item, idx) => (
+            <div key={idx} className="text-center">
+              <h3 className="text-3xl font-bold text-[#2BAA8E]">
+                {item.value}
+              </h3>
+              <p className="text-lg">{item.label}</p>
+            </div>
+          ))}
         </div>
       </section>
 

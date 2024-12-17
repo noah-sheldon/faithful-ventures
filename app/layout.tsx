@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     "business technology",
     "tech strategy",
   ],
-  authors: [{ name: "Faithful Ventures", url: "https://faithfulvc.com" }],
+  authors: [{ name: "Faithful Ventures", url: "faithful-ventures.vercel.app" }],
   creator: "Faithful Ventures",
   openGraph: {
     title: "Faithful Ventures | Innovative Software Solutions",
     description:
       "Transform your business with innovative software solutions and expert consulting from Faithful Ventures.",
-    url: "https://faithfulvc.com",
+    url: "faithful-ventures.vercel.app",
     siteName: "Faithful Ventures",
     images: [
       {
-        url: "/og-image.png", // Add an Open Graph image in your public folder
+        url: "/logo.png", // Add an Open Graph image in your public folder
         width: 1200,
         height: 630,
         alt: "Faithful Ventures | Software Consulting",
@@ -50,11 +50,13 @@ export const metadata: Metadata = {
     title: "Faithful Ventures | Innovative Software Solutions",
     description:
       "Expert software consulting and custom development to bring your vision to life.",
-    images: ["/og-image.png"], // Update with your Open Graph image
-    creator: "@YourTwitterHandle", // Replace with your Twitter handle
+    images: ["/logo.png"], // Update with your Open Graph image
+    creator: "@faithfulvc", // Replace with your Twitter handle
+  },
+  icons: {
+    icon: "/favicon.png", // Path to favicon in public folder
   },
 };
-
 
 export default function RootLayout({
   children,
