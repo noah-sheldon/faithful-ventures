@@ -14,14 +14,14 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen px-6 space-y-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* Hero Section */}
-      <section className="w-full text-center py-24 bg-gray-50 rounded-lg shadow-md">
+      <section className="w-full text-center py-24 bg-gray-50 rounded-lg shadow-md m-5">
         <div className="space-y-6">
           <h1 className="text-5xl font-extrabold tracking-tight text-gray-800">
             Empowering Your Vision
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Faithful VC provides innovative software solutions tailored to your
-            needs.
+            Faithful Ventures provides innovative software solutions tailored to
+            your needs.
           </p>
           <div className="flex justify-center gap-4">
             <Button className="bg-[#2BAA8E] text-white hover:bg-[#228F75] transition-transform transform hover:scale-105">
@@ -69,10 +69,10 @@ export default function Home() {
       <section className="w-full py-12">
         <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center leading-relaxed">
-          At Faithful VC, we are passionate about helping businesses achieve
-          their goals with technology. Whether you're just starting or scaling
-          up, we provide innovative and reliable software solutions tailored to
-          your needs.
+          At Faithful Ventures, we are passionate about helping businesses
+          achieve their goals with technology. Whether you're just starting or
+          scaling up, we provide innovative and reliable software solutions
+          tailored to your needs.
         </p>
       </section>
 
@@ -86,7 +86,7 @@ export default function Home() {
             {
               name: "John Doe",
               feedback:
-                "Faithful VC helped us streamline our software process.",
+                "Faithful Ventures helped us streamline our software process.",
             },
             {
               name: "Jane Smith",
@@ -137,14 +137,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="w-full py-8 text-center text-gray-600 dark:text-gray-400">
-        <Separator />
-        <p className="mt-4">
-          &copy; {new Date().getFullYear()} Faithful VC. All rights reserved.
-        </p>
-      </footer>
     </main>
   );
 }
