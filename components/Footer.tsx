@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Twitter, Linkedin, Mail, X } from "lucide-react";
+import { Linkedin, Mail, X } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,8 +14,8 @@ export default function Footer() {
               Faithful Ventures
             </h2>
             <p className="text-gray-300">
-              Innovative software solutions for growing businesses. Let's bring
-              your vision to life!
+              Innovative software solutions for growing businesses. Let&apos;s
+              bring your vision to life!
             </p>
           </div>
 

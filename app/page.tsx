@@ -1,13 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
@@ -70,8 +62,8 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center leading-relaxed">
           At Faithful Ventures, we are passionate about helping businesses
-          achieve their goals with technology. Whether you're just starting or
-          scaling up, we provide innovative and reliable software solutions
+          achieve their goals with technology. Whether you&apos;re just starting
+          or scaling up, we provide innovative and reliable software solutions
           tailored to your needs.
         </p>
       </section>
