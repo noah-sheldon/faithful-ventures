@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Calendar } from "lucide-react";
 
 export default function About() {
   return (
@@ -102,11 +103,32 @@ export default function About() {
         </h2>
         <p className="mt-4 text-lg max-w-xl mx-auto">
           Ready to take your business to the next level? Contact us today to get
-          started.
+          started or schedule a call with us.
         </p>
-        <Button className="mt-6 bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg">
-          Get in Touch
-        </Button>
+        <div className="mt-6 flex flex-col md:flex-row justify-center gap-4">
+          {/* Contact Us Button */}
+          <Button
+            asChild
+            className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg"
+          >
+            <a href="mailto:info@faithfulvc.xyz">Contact Us</a>
+          </Button>
+
+          {/* Book Appointment Button */}
+          <Button
+            asChild
+            variant="outline"
+            className="text-[#2BAA8E] border-white hover:bg-white hover:text-[#2BAA8E] transition-transform transform hover:scale-105 text-lg"
+          >
+            <a
+              href="https://calendar.app.google/a9nebr5GxsShHSNy7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book an Appointment <Calendar className="w-5 h-5 ml-2" />
+            </a>
+          </Button>
+        </div>
       </section>
 
       {/* Footer Separator */}
