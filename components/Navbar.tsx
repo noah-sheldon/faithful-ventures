@@ -56,10 +56,16 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <Button
-          variant="ghost"
-          className="hidden md:inline-flex bg-[#F4B400] text-gray-800 hover:bg-yellow-500 transition-all"
+          asChild
+          className="hidden md:inline-flex px-4 py-2 bg-[#F4B400] text-gray-900 font-semibold hover:bg-yellow-500 transition-transform transform hover:scale-105"
         >
-          Get Started
+          <a
+            href="https://calendar.app.google/a9nebr5GxsShHSNy7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book an Appointment
+          </a>
         </Button>
 
         {/* Mobile Menu Button */}
@@ -90,11 +96,18 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            {/* Mobile CTA Button */}
             <Button
-              className="bg-[#F4B400] text-gray-800 hover:bg-yellow-500"
-              onClick={() => setMobileMenuOpen(false)}
+              asChild
+              className="w-full max-w-xs px-4 py-2 bg-[#F4B400] text-gray-900 font-semibold rounded-md hover:bg-yellow-500 transition-transform transform hover:scale-105"
             >
-              Get Started
+              <a
+                href="https://calendar.app.google/a9nebr5GxsShHSNy7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book an Appointment
+              </a>
             </Button>
           </div>
         </div>
