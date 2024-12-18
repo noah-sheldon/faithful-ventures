@@ -105,11 +105,11 @@ export default function About() {
           Ready to take your business to the next level? Contact us today to get
           started or schedule a call with us.
         </p>
-        <div className="mt-6 flex flex-col md:flex-row justify-center gap-4">
+        <div className="mt-6 flex flex-col md:flex-row justify-center items-center gap-4">
           {/* Contact Us Button */}
           <Button
             asChild
-            className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg"
+            className="w-36 bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg"
           >
             <a href="mailto:info@faithfulvc.xyz">Contact Us</a>
           </Button>
