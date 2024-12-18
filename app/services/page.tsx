@@ -100,7 +100,7 @@ export default function Services() {
           Reach out today to schedule a consultation or book an appointment with
           us.
         </p>
-        <div className="mt-6 flex flex-col md:flex-row justify-center gap-4">
+        <div className="mt-6 flex flex-col md:flex-row justify-center items-center gap-4">
           {/* Contact Us Button */}
           <Button
             asChild
