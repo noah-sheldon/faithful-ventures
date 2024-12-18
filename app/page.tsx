@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,14 +17,23 @@ export default function Home() {
             your needs.
           </p>
           <div className="flex justify-center gap-4">
-            <Button className="bg-[#2BAA8E] text-white hover:bg-[#228F75] transition-transform transform hover:scale-105">
-              Get in Touch
+            {/* Get in Touch - mailto */}
+            <Button
+              asChild
+              className="bg-[#2BAA8E] text-white hover:bg-[#228F75] transition-transform transform hover:scale-105"
+            >
+              <a href="mailto:info@faithfulvc.xyz">Get in Touch</a>
             </Button>
+
+            {/* Learn More - routes to About Page */}
             <Button
               variant="outline"
+              asChild
               className="border-[#2BAA8E] text-[#2BAA8E] hover:bg-[#2BAA8E] hover:text-white transition-transform transform hover:scale-105"
             >
-              Learn More <ArrowRight className="w-4 h-4 ml-2" />
+              <Link href="/about">
+                Learn More <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -104,8 +114,18 @@ export default function Home() {
         <p className="mt-4 text-lg">
           Schedule a consultation to see how we can bring your ideas to life.
         </p>
-        <Button className="mt-6 bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg">
-          Schedule a Call
+        {/* Schedule a Call Button */}
+        <Button
+          asChild
+          className="mt-6 bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition-transform transform hover:scale-105 text-lg"
+        >
+          <a
+            href="https://calendar.app.google/a9nebr5GxsShHSNy7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule a Call
+          </a>
         </Button>
       </section>
 
