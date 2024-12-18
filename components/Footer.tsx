@@ -47,10 +47,10 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
                 <a
-                  href="mailto:contact.faithfulventures@gmail.com"
+                  href="mailto:info@faithfulvc.xyz"
                   className="hover:text-white transition"
                 >
-                  contact.faithfulventures@gmail.com
+                  info@faithfulvc.xyz
                 </a>
               </li>
               <li className="flex items-center gap-2">
