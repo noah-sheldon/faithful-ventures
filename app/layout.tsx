@@ -15,47 +15,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Faithful Ventures | Innovative Software Solutions",
+  title: "FaithfulVC Europe & UK | AI-Powered Digital Agency & Cybersecurity",
   description:
-    "Faithful Ventures provides exceptional software consulting, custom development, and innovative product solutions tailored to your business needs.",
+    "Premier AI-powered digital agency and cybersecurity consultancy serving Europe & UK. Expert web development, SEO, penetration testing, and compliance consulting.",
   keywords: [
-    "software consulting",
-    "custom software development",
-    "product innovation",
-    "Faithful Ventures",
-    "software solutions",
-    "business technology",
-    "tech strategy",
+    "AI digital agency",
+    "cybersecurity consulting",
+    "web development UK",
+    "SEO services Europe",
+    "penetration testing",
+    "ISO 27001 compliance",
+    "GDPR consulting",
+    "FaithfulVC",
+    "digital transformation",
+    "AI automation",
+    "cloud security",
+    "enterprise software",
   ],
-  authors: [{ name: "Faithful Ventures", url: "faithful-ventures.vercel.app" }],
-  creator: "Faithful Ventures",
+  authors: [{ name: "FaithfulVC Europe & UK", url: "faithful-ventures.vercel.app" }],
+  creator: "FaithfulVC",
   openGraph: {
-    title: "Faithful Ventures | Innovative Software Solutions",
+    title: "FaithfulVC Europe & UK | AI-Powered Digital Agency & Cybersecurity",
     description:
-      "Transform your business with innovative software solutions and expert consulting from Faithful Ventures.",
+      "Transform your business with AI-powered digital solutions and enterprise-grade cybersecurity from Europe's leading consultancy.",
     url: "faithful-ventures.vercel.app",
-    siteName: "Faithful Ventures",
+    siteName: "FaithfulVC",
     images: [
       {
-        url: "/logo.png", // Add an Open Graph image in your public folder
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Faithful Ventures | Software Consulting",
+        alt: "FaithfulVC | AI Digital Agency & Cybersecurity",
       },
     ],
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faithful Ventures | Innovative Software Solutions",
+    title: "FaithfulVC Europe & UK | AI-Powered Digital Agency",
     description:
-      "Expert software consulting and custom development to bring your vision to life.",
-    images: ["/logo.png"], // Update with your Open Graph image
-    creator: "@faithfulvc", // Replace with your Twitter handle
+      "Leading AI-powered digital agency and cybersecurity consultancy transforming businesses across Europe & UK.",
+    images: ["/logo.png"],
+    creator: "@faithfulvc",
   },
   icons: {
-    icon: "/favicon.png", // Path to favicon in public folder
+    icon: "/favicon.png",
   },
 };
 
