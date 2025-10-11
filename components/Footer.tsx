@@ -4,18 +4,18 @@ import { Linkedin, Mail, X } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#2BAA8E] to-[#228F75] text-gray-200 py-12 mt-12">
+    <footer className="bg-gradient-to-r from-[#00C2A8] to-[#0074D9] text-white py-12 mt-12">
       <div className="container mx-auto px-6 md:px-12 lg:px-16">
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Column 1: Company Info */}
           <div>
             <h2 className="text-white text-2xl font-bold mb-3">
-              Faithful Ventures
+              FaithfulVC
             </h2>
-            <p className="text-gray-300">
-              Innovative software solutions for growing businesses. Let&apos;s
-              bring your vision to life!
+            <p className="text-white/80">
+              AI-powered digital agency and cybersecurity consultancy serving Europe & UK. 
+              Transform your business with cutting-edge technology and enterprise-grade security.
             </p>
           </div>
 
@@ -25,16 +25,24 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {["Home", "About Us", "Services", "Contact"].map((link) => (
+              {["Home", "Portfolio", "Insights", "Contact"].map((link) => (
                 <li key={link}>
                   <Link
                     href={`/${link.replace(/\s/g, "").toLowerCase()}`}
-                    className="hover:text-white hover:underline underline-offset-4 transition"
+                    className="hover:text-white/90 hover:underline underline-offset-4 transition-colors duration-200"
                   >
                     {link}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/services/web-development"
+                  className="hover:text-white hover:underline underline-offset-4 transition"
+                >
+                  Services
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -48,7 +56,7 @@ export default function Footer() {
                 <Mail className="w-5 h-5" />
                 <a
                   href="mailto:info@faithfulvc.xyz"
-                  className="hover:text-white transition"
+                  className="hover:text-white/90 transition-colors duration-200"
                 >
                   info@faithfulvc.xyz
                 </a>
@@ -59,7 +67,7 @@ export default function Footer() {
                   href="https://x.com/faithfulvc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition"
+                  className="hover:text-white/90 transition-colors duration-200"
                 >
                   X
                 </a>
@@ -70,7 +78,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/company/faithfulvc/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition"
+                  className="hover:text-white/90 transition-colors duration-200"
                 >
                   LinkedIn
                 </a>
@@ -96,12 +104,11 @@ export default function Footer() {
         </div> */}
 
         {/* Separator */}
-        <Separator className="bg-gray-500" />
+        <Separator className="bg-white/20" />
 
         {/* Copyright */}
-        <div className="text-center text-sm text-gray-300 mt-6">
-          &copy; {new Date().getFullYear()} Faithful Ventures. All rights
-          reserved.
+        <div className="text-center text-sm text-white/70 mt-6">
+          &copy; {new Date().getFullYear()} FaithfulVC Europe & UK. All rights reserved.
         </div>
       </div>
     </footer>

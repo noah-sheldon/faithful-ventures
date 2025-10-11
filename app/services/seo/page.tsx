@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Search, TrendingUp, Target, BarChart3, CheckCircle, ArrowRight, Star, Globe } from "lucide-react";
+import { Search, TrendingUp, Target, BarChart3, CheckCircle, Star, Globe } from "lucide-react";
 import Link from "next/link";
 
 export default function SEO() {
@@ -96,7 +96,7 @@ export default function SEO() {
               {
                 icon: Search,
                 title: "Technical SEO Audits",
-                description: "Comprehensive analysis of your website's technical health and search performance.",
+                description: "Comprehensive analysis of your website&apos;s technical health and search performance.",
                 features: ["Site Speed Analysis", "Mobile Optimization", "Schema Markup", "Crawl Error Fixes"]
               },
               {

@@ -386,7 +386,7 @@ export default function WebDevelopment() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Build Your Website?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
-            Let's create a website that not only looks amazing but drives real business results. 
+            Let&apos;s create a website that not only looks amazing but drives real business results. 
             Schedule a free consultation to discuss your project.
           </p>
           

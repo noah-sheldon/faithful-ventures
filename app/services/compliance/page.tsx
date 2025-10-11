@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, FileText, Users, Award, CheckCircle, ArrowRight, Star, Scale, Lock, Eye } from "lucide-react";
+import { Shield, FileText, Award, CheckCircle, Star, Scale, Lock, Eye } from "lucide-react";
 import Link from "next/link";
 
 export default function Compliance() {
   return (
     <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-br from-green-50 to-teal-50 py-20">
+      <section className="w-full bg-gradient-to-br from-green-50 to-green-100 py-20">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -476,7 +476,7 @@ export default function Compliance() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-2xl p-8 lg:p-12">
+          <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-8 lg:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">SaaS ISO 27001 Certification</h3>

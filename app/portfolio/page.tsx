@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, ExternalLink, CheckCircle, Star, TrendingUp, Shield, Zap, Code, Search, Brain } from "lucide-react";
+import { CheckCircle, Star, TrendingUp, Shield, Zap, Code, Search, Brain } from "lucide-react";
 import Link from "next/link";
 
 export default function Portfolio() {
@@ -71,7 +71,7 @@ export default function Portfolio() {
         { metric: "60%", label: "Lower CAC" }
       ],
       technologies: ["SEO", "Content Marketing", "Analytics", "Conversion Optimization"],
-      testimonial: "Our organic traffic and leads have grown beyond our expectations. FaithfulVC's SEO strategy was exactly what we needed.",
+      testimonial: "Our organic traffic and leads have grown beyond our expectations. FaithfulVC&apos;s SEO strategy was exactly what we needed.",
       clientName: "Mark Thompson",
       clientTitle: "Founder, ProductivityApp",
       image: "/placeholder-saas.jpg",
@@ -93,7 +93,7 @@ export default function Portfolio() {
         { metric: "24/7", label: "Real-time Monitoring" }
       ],
       technologies: ["IoT", "Predictive Analytics", "Python", "Industrial Automation"],
-      testimonial: "The automation system has revolutionized our operations. We're more efficient, profitable, and competitive than ever.",
+      testimonial: "The automation system has revolutionized our operations. We&apos;re more efficient, profitable, and competitive than ever.",
       clientName: "Robert Martinez",
       clientTitle: "Operations Director, IndustrialTech",
       image: "/placeholder-manufacturing.jpg",
@@ -106,7 +106,7 @@ export default function Portfolio() {
       industry: "Healthcare",
       category: "web-development",
       description: "HIPAA-compliant patient portal with modern design and robust security features.",
-      challenge: "Legacy system was not HIPAA compliant, had poor user experience, and couldn't scale with growing patient base.",
+      challenge: "Legacy system was not HIPAA compliant, had poor user experience, and couldn&apos;t scale with growing patient base.",
       solution: "Built modern, responsive patient portal with HIPAA compliance, integrated telehealth features, and implemented comprehensive security measures.",
       results: [
         { metric: "100%", label: "HIPAA Compliance" },
@@ -115,7 +115,7 @@ export default function Portfolio() {
         { metric: "60%", label: "Admin Efficiency" }
       ],
       technologies: ["React", "Node.js", "HIPAA Compliance", "Security"],
-      testimonial: "Our new patient portal has transformed how we interact with patients. It's secure, user-friendly, and fully compliant.",
+      testimonial: "Our new patient portal has transformed how we interact with patients. It&apos;s secure, user-friendly, and fully compliant.",
       clientName: "Dr. Emily Johnson",
       clientTitle: "Medical Director, MedCare Solutions",
       image: "/placeholder-healthcare.jpg",
@@ -169,7 +169,7 @@ export default function Portfolio() {
             <span className="text-blue-600"> Case Studies</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-            Discover how we've helped businesses across industries achieve digital transformation, 
+            Discover how we&apos;ve helped businesses across industries achieve digital transformation, 
             improve security, and drive growth through innovative solutions.
           </p>
           <div className="flex justify-center items-center gap-8 text-sm text-gray-500">
@@ -195,12 +195,12 @@ export default function Portfolio() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Success Stories</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              In-depth look at how we've transformed businesses through strategic digital solutions.
+              In-depth look at how we&apos;ve transformed businesses through strategic digital solutions.
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {featuredStudies.map((study, idx) => (
+            {featuredStudies.map((study) => (
               <Card key={study.id} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg">
                 <div className="relative overflow-hidden rounded-t-lg bg-gradient-to-r from-blue-600 to-purple-600 h-48 flex items-center justify-center">
                   <div className="text-center text-white">
@@ -235,7 +235,7 @@ export default function Portfolio() {
                     <div className="flex items-start gap-4">
                       <div className="flex-1">
                         <blockquote className="text-gray-700 italic mb-2">
-                          "{study.testimonial}"
+                          &quot;{study.testimonial}&quot;
                         </blockquote>
                         <cite className="text-sm text-gray-500">
                           {study.clientName}, {study.clientTitle}
@@ -324,7 +324,7 @@ export default function Portfolio() {
                   </div>
                   
                   <blockquote className="text-xs text-gray-600 italic mb-3 line-clamp-2">
-                    "{study.testimonial}"
+                    &quot;{study.testimonial}&quot;
                   </blockquote>
                   
                   <div className="text-xs text-gray-500">
@@ -396,14 +396,14 @@ export default function Portfolio() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear directly from the businesses we've helped transform and secure.
+              Hear directly from the businesses we&apos;ve helped transform and secure.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                quote: "FaithfulVC didn't just build our website – they transformed our entire digital strategy. The integrated approach to development and security gave us confidence to scale rapidly.",
+                quote: "FaithfulVC didn&apos;t just build our website – they transformed our entire digital strategy. The integrated approach to development and security gave us confidence to scale rapidly.",
                 author: "Sarah Mitchell",
                 title: "CEO, TechFlow Solutions",
                 company: "FinTech",
@@ -432,7 +432,7 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <blockquote className="text-gray-700 text-lg leading-relaxed mb-6 italic">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </blockquote>
                   <div className="border-t pt-4">
                     <p className="font-semibold text-gray-900">{testimonial.author}</p>
@@ -451,7 +451,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Join Our Success Stories?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
-            Let's discuss your project and create a custom solution that drives real results for your business. 
+            Let&apos;s discuss your project and create a custom solution that drives real results for your business. 
             Schedule a free consultation to get started.
           </p>
           

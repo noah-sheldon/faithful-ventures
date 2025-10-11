@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, Search, Bug, Lock, CheckCircle, ArrowRight, Star, AlertTriangle, Eye, Target } from "lucide-react";
+import { Shield, Search, Bug, Lock, CheckCircle, Star, AlertTriangle, Eye, Target } from "lucide-react";
 import Link from "next/link";
 
 export default function PenetrationTesting() {
@@ -114,7 +114,7 @@ export default function PenetrationTesting() {
               {
                 icon: Target,
                 title: "Red Team Exercises",
-                description: "Full-scale simulated attacks that test your organization's detection and response capabilities.",
+                description: "Full-scale simulated attacks that test your organization&apos;s detection and response capabilities.",
                 features: ["Multi-vector Attacks", "Social Engineering", "Physical Security Testing", "Incident Response Testing"]
               },
               {
@@ -486,7 +486,7 @@ export default function PenetrationTesting() {
       {/* CTA Section */}
       <section className="w-full py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-6">Don't Wait for a Breach</h2>
+          <h2 className="text-4xl font-bold mb-6">Don&apos;t Wait for a Breach</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-red-100">
             Proactive security testing is your best defense against cyber attacks. 
             Schedule a consultation to discuss your security testing needs and get a custom quote.

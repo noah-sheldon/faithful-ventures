@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Brain, Zap, Bot, BarChart3, CheckCircle, ArrowRight, Star, Cpu, Database, Workflow } from "lucide-react";
+import { Brain, Bot, BarChart3, CheckCircle, Star, Cpu, Database, Workflow } from "lucide-react";
 import Link from "next/link";
 
 export default function AIAutomation() {

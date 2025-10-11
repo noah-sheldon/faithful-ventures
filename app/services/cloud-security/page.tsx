@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Cloud, Shield, Lock, Database, CheckCircle, ArrowRight, Star, Settings, Users, Globe } from "lucide-react";
+import { Cloud, Shield, Database, CheckCircle, Star, Settings, Users, Globe } from "lucide-react";
 import Link from "next/link";
 
 export default function CloudSecurity() {
@@ -493,7 +493,7 @@ export default function CloudSecurity() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">Secure Your Cloud Infrastructure Today</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
-            Don't leave your cloud security to chance. Get a comprehensive assessment of your infrastructure 
+            Don&apos;t leave your cloud security to chance. Get a comprehensive assessment of your infrastructure 
             and APIs to identify and fix vulnerabilities before they become problems.
           </p>
           

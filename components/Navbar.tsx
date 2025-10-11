@@ -41,7 +41,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-lg border-b">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
       <nav className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
@@ -53,8 +53,8 @@ export default function Navbar() {
             priority
             className="rounded-lg"
           />
-          <span className="text-2xl font-bold text-gray-900 tracking-tight">
-            Faithful<span className="text-blue-600">VC</span>
+          <span className="text-2xl font-bold text-black tracking-tight">
+            Faithful<span className="bg-gradient-to-r from-[#00C2A8] to-[#0074D9] bg-clip-text text-transparent">VC</span>
           </span>
         </Link>
 
@@ -65,8 +65,8 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300",
-                pathname === link.href && "text-blue-600 border-b-2 border-blue-600 pb-1"
+                "text-[#1E1E1E] font-medium hover:text-[#0074D9] transition-colors duration-300",
+                pathname === link.href && "text-[#0074D9] border-b-2 border-[#0074D9] pb-1"
               )}
             >
               {link.name}
@@ -81,8 +81,8 @@ export default function Navbar() {
           >
             <button
               className={cn(
-                "flex items-center gap-1 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300",
-                pathname.startsWith('/services') && "text-blue-600"
+                "flex items-center gap-1 text-[#1E1E1E] font-medium hover:text-[#0074D9] transition-colors duration-300",
+                pathname.startsWith('/services') && "text-[#0074D9]"
               )}
             >
               Services
@@ -105,7 +105,7 @@ export default function Navbar() {
                           <Link
                             key={serviceIdx}
                             href={service.href}
-                            className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded px-3 py-2 transition-colors duration-200"
+                            className="block text-[#1E1E1E] hover:text-[#0074D9] hover:bg-gradient-to-r hover:from-[#00C2A8]/10 hover:to-[#0074D9]/10 rounded-xl px-3 py-2 transition-all duration-200"
                           >
                             {service.name}
                           </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
                   <div className="border-t pt-4">
                     <Link
                       href="/services"
-                      className="block text-blue-600 font-medium hover:text-blue-700 px-3 py-2"
+                      className="block text-[#0074D9] font-medium hover:text-[#00C2A8] px-3 py-2"
                     >
                       View All Services →
                     </Link>
@@ -130,7 +130,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <Button
           asChild
-          className="hidden lg:inline-flex px-6 py-2 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300"
+          className="hidden lg:inline-flex px-6 py-3 bg-gradient-to-r from-[#00C2A8] to-[#0074D9] text-white font-semibold hover:scale-105 transform transition-all duration-300 rounded-full shadow-lg"
         >
           <a
             href="https://calendar.app.google/a9nebr5GxsShHSNy7"
@@ -166,8 +166,8 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
-                    "text-gray-700 hover:text-blue-600 text-lg font-medium transition-colors duration-300",
-                    pathname === link.href && "text-blue-600"
+                    "text-[#1E1E1E] hover:text-[#0074D9] text-lg font-medium transition-colors duration-300",
+                    pathname === link.href && "text-[#0074D9]"
                   )}
                 >
                   {link.name}
@@ -188,7 +188,7 @@ export default function Navbar() {
                           key={serviceIdx}
                           href={service.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                          className="block text-[#1E1E1E] hover:text-[#0074D9] transition-colors duration-200"
                         >
                           {service.name}
                         </Link>
@@ -202,7 +202,7 @@ export default function Navbar() {
               <div className="border-t pt-4 mt-4">
                 <Button
                   asChild
-                  className="w-full bg-blue-600 text-white font-semibold hover:bg-blue-700 py-3"
+                  className="w-full bg-gradient-to-r from-[#00C2A8] to-[#0074D9] text-white font-semibold hover:scale-105 transform transition-all duration-300 py-3 rounded-full"
                 >
                   <a
                     href="https://calendar.app.google/a9nebr5GxsShHSNy7"

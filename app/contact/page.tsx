@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CheckCircle, Mail, Phone, MapPin, Clock, ArrowRight, Star, Shield } from "lucide-react";
+import { CheckCircle, Mail, MapPin, Clock, Star, Shield } from "lucide-react";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("myzyqljr");
@@ -21,7 +20,7 @@ export default function Contact() {
       <section className="w-full bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 mb-6">
-            Let's Build Something
+            Let&apos;s Build Something
             <span className="text-blue-600"> Amazing Together</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
@@ -56,7 +55,7 @@ export default function Contact() {
                   Start Your Project
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Tell us about your project and we'll provide a custom quote within 24 hours.
+                  Tell us about your project and we&apos;ll provide a custom quote within 24 hours.
                 </p>
                 
                 {state.succeeded ? (
@@ -64,7 +63,7 @@ export default function Contact() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
                     <p className="text-gray-600 mb-6">
-                      Your message has been sent successfully. We'll get back to you within 24 hours.
+                      Your message has been sent successfully. We&apos;ll get back to you within 24 hours.
                     </p>
                     <Button
                       onClick={() => window.location.reload()}
@@ -229,7 +228,7 @@ export default function Contact() {
                     </Button>
                     
                     <p className="text-xs text-gray-500 text-center">
-                      By submitting this form, you agree to our privacy policy. We'll never share your information.
+                      By submitting this form, you agree to our privacy policy. We&apos;ll never share your information.
                     </p>
                   </form>
                 )}
@@ -370,11 +369,11 @@ export default function Contact() {
               },
               {
                 question: "Can you help with both development and marketing?",
-                answer: "Absolutely! We're a full-service agency covering web development, AI automation, SEO, digital marketing, and cybersecurity. Our integrated approach ensures all services work together seamlessly."
+                answer: "Absolutely! We&apos;re a full-service agency covering web development, AI automation, SEO, digital marketing, and cybersecurity. Our integrated approach ensures all services work together seamlessly."
               },
               {
-                question: "What if I'm not sure about my exact requirements?",
-                answer: "That's perfectly fine! We start with a discovery consultation to understand your goals and challenges. We'll help you define requirements and recommend the best solutions for your needs."
+                question: "What if I&apos;m not sure about my exact requirements?",
+                answer: "That&apos;s perfectly fine! We start with a discovery consultation to understand your goals and challenges. We&apos;ll help you define requirements and recommend the best solutions for your needs."
               }
             ].map((faq, idx) => (
               <Card key={idx} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -398,7 +397,7 @@ export default function Contact() {
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
             Join over 100 businesses that have transformed their digital presence with FaithfulVC. 
-            Let's discuss how we can help you achieve your goals.
+            Let&apos;s discuss how we can help you achieve your goals.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
