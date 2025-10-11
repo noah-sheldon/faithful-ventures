@@ -100,9 +100,9 @@ export default function Home() {
                 size="lg"
                 className="bg-gradient-to-r from-[#B0FF72] to-[#FFA94D] text-black hover:scale-105 transform transition-all duration-300 px-8 py-4 text-lg font-semibold rounded-full shadow-lg"
               >
-                <a href="https://calendar.app.google/a9nebr5GxsShHSNy7" target="_blank" rel="noopener noreferrer">
-                  Schedule Free Consultation
-                </a>
+                <Link href="/contact">
+                  Get Free Consultation
+                </Link>
               </Button>
               <Button
                 variant="outline"
@@ -301,9 +301,9 @@ export default function Home() {
               size="lg"
               className="bg-gradient-to-r from-[#B0FF72] to-[#FFA94D] text-black hover:scale-105 transform transition-all duration-300 px-8 py-4 text-lg font-semibold rounded-full shadow-lg"
             >
-              <a href="https://calendar.app.google/a9nebr5GxsShHSNy7" target="_blank" rel="noopener noreferrer">
+              <Link href="/contact">
                 Get Your Free Consultation
-              </a>
+              </Link>
             </Button>
             <Button
               variant="outline"

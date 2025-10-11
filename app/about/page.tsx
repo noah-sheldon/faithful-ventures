@@ -8,7 +8,6 @@ import {
   Search,
   Award,
   Users,
-  Globe,
   CheckCircle,
   ArrowRight,
   Zap,

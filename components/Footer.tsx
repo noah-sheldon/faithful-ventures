@@ -25,10 +25,10 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {["Home", "Portfolio", "Insights", "Contact"].map((link) => (
+              {["Home", "Case Studies", "Insights", "Contact"].map((link) => (
                 <li key={link}>
                   <Link
-                    href={`/${link.replace(/\s/g, "").toLowerCase()}`}
+                    href={link === "Case Studies" ? "/portfolio" : `/${link.replace(/\s/g, "").toLowerCase()}`}
                     className="hover:text-white/90 hover:underline underline-offset-4 transition-colors duration-200"
                   >
                     {link}

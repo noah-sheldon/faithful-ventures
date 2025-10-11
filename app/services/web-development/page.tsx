@@ -293,67 +293,82 @@ export default function WebDevelopment() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Starter Website",
-                price: "£5,000 - £10,000",
-                description: "Perfect for small businesses and startups",
+                name: "Startup Launch",
+                price: "£3,500 - £7,500",
+                originalPrice: "£5,000 - £10,000",
+                description: "Perfect for new businesses getting started",
                 features: [
                   "5-page responsive website",
+                  "Modern design system",
                   "Basic SEO optimization",
                   "Contact form integration",
-                  "Mobile-friendly design",
-                  "Basic security setup",
-                  "3 months support"
+                  "Mobile-first approach",
+                  "Security setup included",
+                  "6 months support"
                 ],
-                popular: false
+                popular: false,
+                badge: "Launch Special -30%"
               },
               {
-                name: "Professional Website",
-                price: "£10,000 - £25,000",
+                name: "Growth Package",
+                price: "£7,500 - £18,000",
+                originalPrice: "£10,000 - £25,000",
                 description: "Ideal for growing businesses",
                 features: [
-                  "10-page custom website",
+                  "Up to 15 pages",
+                  "Custom design system",
                   "Advanced SEO optimization",
                   "CMS integration",
                   "E-commerce capability",
+                  "Performance optimization",
                   "Security audit included",
-                  "6 months support",
-                  "Analytics setup"
+                  "12 months support"
                 ],
-                popular: true
+                popular: true,
+                badge: "Most Popular"
               },
               {
-                name: "Enterprise Solution",
-                price: "£25,000+",
-                description: "For large organizations with complex needs",
+                name: "Enterprise Scale",
+                price: "£18,000+",
+                originalPrice: "£25,000+",
+                description: "For established companies with complex needs",
                 features: [
                   "Unlimited pages",
                   "Custom functionality",
                   "Advanced integrations",
                   "Full security assessment",
                   "Performance optimization",
-                  "12 months support",
+                  "Dedicated project manager",
                   "Training included",
-                  "Priority support"
+                  "24/7 priority support"
                 ],
-                popular: false
+                popular: false,
+                badge: "Enterprise"
               }
             ].map((plan, idx) => (
-              <Card key={idx} className={`relative ${plan.popular ? 'ring-2 ring-blue-600 transform scale-105' : ''} hover:shadow-xl transition-all duration-300`}>
-                {plan.popular && (
+              <Card key={idx} className={`relative ${plan.popular ? 'ring-2 ring-[#0074D9] transform scale-105' : ''} hover:shadow-xl transition-all duration-300 border shadow-lg rounded-2xl`}>
+                {plan.badge && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                      Most Popular
+                    <div className={`${plan.popular ? 'bg-gradient-to-r from-[#00C2A8] to-[#0074D9]' : plan.badge.includes('Launch') ? 'bg-gradient-to-r from-[#B0FF72] to-[#FFA94D]' : 'bg-gradient-to-r from-[#0074D9] to-[#00C2A8]'} text-${plan.badge.includes('Launch') ? 'black' : 'white'} px-4 py-2 rounded-full text-sm font-semibold`}>
+                      {plan.badge}
                     </div>
                   </div>
                 )}
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-bold text-gray-900 mb-2">
+                  <CardTitle className="text-2xl font-bold text-black mb-2">
                     {plan.name}
                   </CardTitle>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">
-                    {plan.price}
+                  <div className="mb-2">
+                    {plan.originalPrice && (
+                      <div className="text-lg text-[#1E1E1E] line-through opacity-60 mb-1">
+                        {plan.originalPrice}
+                      </div>
+                    )}
+                    <div className="text-3xl font-bold bg-gradient-to-r from-[#00C2A8] to-[#0074D9] bg-clip-text text-transparent">
+                      {plan.price}
+                    </div>
                   </div>
-                  <p className="text-gray-600">
+                  <p className="text-[#1E1E1E]">
                     {plan.description}
                   </p>
                 </CardHeader>
@@ -361,18 +376,18 @@ export default function WebDevelopment() {
                   <div className="space-y-3 mb-8">
                     {plan.features.map((feature, featureIdx) => (
                       <div key={featureIdx} className="flex items-center">
-                        <CheckCircle className="w-4 h-4 text-green-500 mr-3" />
-                        <span className="text-gray-700">{feature}</span>
+                        <CheckCircle className="w-4 h-4 text-[#00C2A8] mr-3" />
+                        <span className="text-[#1E1E1E]">{feature}</span>
                       </div>
                     ))}
                   </div>
                   <Button 
                     asChild 
-                    className={`w-full ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-900 hover:bg-gray-800'} text-white`}
+                    className={`w-full ${plan.popular ? 'bg-gradient-to-r from-[#00C2A8] to-[#0074D9] hover:scale-105 transform' : 'bg-gradient-to-r from-[#1E1E1E] to-[#0074D9] hover:scale-105 transform'} text-white transition-all duration-300 rounded-xl`}
                   >
-                    <a href="https://calendar.app.google/a9nebr5GxsShHSNy7" target="_blank" rel="noopener noreferrer">
+                    <Link href="/contact">
                       Get Started
-                    </a>
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
