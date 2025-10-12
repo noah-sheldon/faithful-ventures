@@ -13,6 +13,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   CheckCircle,
   Mail,
   MapPin,
@@ -526,52 +532,62 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                question: "How long does a typical project take?",
-                answer:
-                  "Project timelines vary based on scope and complexity. Simple websites take 2-4 weeks, while comprehensive digital transformations can take 3-6 months. We provide detailed timelines in our proposals.",
-              },
-              {
-                question: "Do you work with startups or only enterprises?",
-                answer:
-                  "We work with businesses of all sizes, from startups to Fortune 500 companies. Our services are tailored to match your budget and growth stage.",
-              },
-              {
-                question: "What makes your security services different?",
-                answer:
-                  "Unlike typical agencies, we have certified ethical hackers on our team who embed security best practices into every project from day one. We also offer comprehensive penetration testing and compliance consulting.",
-              },
-              {
-                question:
-                  "Do you provide ongoing support after project completion?",
-                answer:
-                  "Yes, we offer various support packages including maintenance, monitoring, and continuous optimization. Many clients choose our ongoing partnerships for long-term success.",
-              },
-              {
-                question: "Can you help with both development and marketing?",
-                answer:
-                  "Absolutely! We're a full-service agency covering web development, AI automation, SEO, digital marketing, and cybersecurity. Our integrated approach ensures all services work together seamlessly.",
-              },
-              {
-                question: "What if I'm not sure about my exact requirements?",
-                answer:
-                  "That's perfectly fine! We start with a discovery consultation to understand your goals and challenges. We'll help you define requirements and recommend the best solutions for your needs.",
-              },
-            ].map((faq, idx) => (
-              <Card
-                key={idx}
-                className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    {faq.question}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1" className="border-b border-gray-200">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
+                  How long does a typical project take?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Project timelines vary based on scope and complexity. Simple websites take 2-4 weeks, while comprehensive digital transformations can take 3-6 months. We provide detailed timelines in our proposals.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border-b border-gray-200">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
+                  Do you work with startups or only enterprises?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  We work with businesses of all sizes, from startups to Fortune 500 companies. Our services are tailored to match your budget and growth stage.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border-b border-gray-200">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
+                  What makes your security services different?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Unlike typical agencies, we have certified ethical hackers on our team who embed security best practices into every project from day one. We also offer comprehensive penetration testing and compliance consulting.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border-b border-gray-200">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
+                  Do you provide ongoing support after project completion?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Yes, we offer various support packages including maintenance, monitoring, and continuous optimization. Many clients choose our ongoing partnerships for long-term success.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border-b border-gray-200">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
+                  Can you help with both development and marketing?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Absolutely! We're a full-service agency covering web development, AI automation, SEO, digital marketing, and cybersecurity. Our integrated approach ensures all services work together seamlessly.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border-b-0">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
+                  What if I'm not sure about my exact requirements?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  That's perfectly fine! We start with a discovery consultation to understand your goals and challenges. We'll help you define requirements and recommend the best solutions for your needs.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
@@ -604,7 +620,7 @@ export default function Contact() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold"
+              className="border-white bg-white/20 text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold transition-all duration-300"
             >
               <a href="mailto:info@faithfulvc.xyz">Send Us an Email</a>
             </Button>

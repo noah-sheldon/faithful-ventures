@@ -108,7 +108,7 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-white/30 text-white hover:bg-white hover:text-[#0074D9] px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
+                className="border-white bg-white/20 text-white hover:bg-white hover:text-[#0074D9] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
               >
                 <Link href="/portfolio">
                   View Success Stories <ArrowRight className="w-5 h-5 ml-2" />
@@ -309,7 +309,7 @@ export default function Home() {
               variant="outline"
               size="lg"
               asChild
-              className="border-white/30 text-white hover:bg-white hover:text-[#0074D9] px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
+              className="border-white bg-white/20 text-white hover:bg-white hover:text-[#0074D9] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
             >
               <Link href="/contact">
                 Request Custom Quote
