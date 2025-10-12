@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,7 +44,7 @@ export default function Contact() {
   });
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
+    setFormData((prev: typeof formData) => ({ ...prev, [field]: value }));
     setSubmitError(""); // Clear error when user types
   };
 
@@ -163,7 +163,7 @@ export default function Contact() {
                           <Input
                             id="name"
                             value={formData.name}
-                            onChange={(e) =>
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                               handleInputChange("name", e.target.value)
                             }
                             placeholder="John Smith"
@@ -182,7 +182,7 @@ export default function Contact() {
                             id="email"
                             type="email"
                             value={formData.email}
-                            onChange={(e) =>
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                               handleInputChange("email", e.target.value)
                             }
                             placeholder="john@company.com"
@@ -204,7 +204,7 @@ export default function Contact() {
                           <Input
                             id="company"
                             value={formData.company}
-                            onChange={(e) =>
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                               handleInputChange("company", e.target.value)
                             }
                             placeholder="Your Company Ltd"
@@ -222,7 +222,7 @@ export default function Contact() {
                             id="phone"
                             type="tel"
                             value={formData.phone}
-                            onChange={(e) =>
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                               handleInputChange("phone", e.target.value)
                             }
                             placeholder="+44 20 1234 5678"
@@ -356,7 +356,7 @@ export default function Contact() {
                         <Textarea
                           id="message"
                           value={formData.message}
-                          onChange={(e) =>
+                          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
                             handleInputChange("message", e.target.value)
                           }
                           placeholder="Tell us about your project goals, challenges, and any specific requirements..."
@@ -575,16 +575,16 @@ export default function Contact() {
                   Can you help with both development and marketing?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 leading-relaxed">
-                  Absolutely! We're a full-service agency covering web development, AI automation, SEO, digital marketing, and cybersecurity. Our integrated approach ensures all services work together seamlessly.
+                  Absolutely! We&apos;re a full-service agency covering web development, AI automation, SEO, digital marketing, and cybersecurity. Our integrated approach ensures all services work together seamlessly.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-6" className="border-b-0">
                 <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#0074D9] transition-colors">
-                  What if I'm not sure about my exact requirements?
+                  What if I&apos;m not sure about my exact requirements?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 leading-relaxed">
-                  That's perfectly fine! We start with a discovery consultation to understand your goals and challenges. We'll help you define requirements and recommend the best solutions for your needs.
+                  That&apos;s perfectly fine! We start with a discovery consultation to understand your goals and challenges. We&apos;ll help you define requirements and recommend the best solutions for your needs.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
