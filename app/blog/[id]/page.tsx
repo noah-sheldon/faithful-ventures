@@ -38,7 +38,7 @@ const blogPosts: BlogPost[] = [
       </ul>
       
       <h2>Real-World Implementation Strategies</h2>
-      <p>At FaithfulVC, we've implemented AI automation for over 200+ clients. Here are the most effective strategies:</p>
+      <p>At FaithfulVC, we've helped numerous clients implement AI automation. Here are the most effective strategies:</p>
       
       <h3>1. Start with High-Volume, Repetitive Tasks</h3>
       <p>Begin with processes that are time-consuming but straightforward. Customer service inquiries, data entry, and invoice processing are excellent starting points.</p>
@@ -120,7 +120,7 @@ const blogPosts: BlogPost[] = [
       </ul>
       
       <h2>Common Implementation Challenges</h2>
-      <p>Based on our experience with 50+ ISO 27001 implementations, here are the most common challenges:</p>
+      <p>Based on our experience with ISO 27001 implementations, here are the most common challenges:</p>
       
       <h3>1. Resource Allocation</h3>
       <p>ISO 27001 requires significant time investment from key personnel. Plan for 20-30% of relevant staff time during implementation.</p>
@@ -135,7 +135,7 @@ const blogPosts: BlogPost[] = [
       <p>While certification requires investment, the ROI is substantial:</p>
       <ul>
         <li><strong>Average cost:</strong> £50,000-£100,000 for initial certification</li>
-        <li><strong>Average benefit:</strong> £500,000+ in new enterprise contracts within 12 months</li>
+        <li><strong>Average benefit:</strong> Significant growth in new enterprise contracts within 12 months</li>
         <li><strong>Ongoing savings:</strong> Reduced insurance costs, fewer security incidents, improved efficiency</li>
       </ul>
       

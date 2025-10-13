@@ -48,7 +48,7 @@ export default function About() {
     {
       icon: Bot,
       title: "AI & Automation",
-      description: "£200k+ average annual savings per client through intelligent process automation",
+      description: "Intelligent process automation that reduces operational costs and improves efficiency",
       metric: "40% efficiency gains"
     },
     {
@@ -61,7 +61,7 @@ export default function About() {
       icon: Shield,
       title: "Cybersecurity",
       description: "Comprehensive security assessments and compliance for enterprise organizations",
-      metric: "99.9% threat detection"
+      metric: "Advanced threat detection"
     },
     {
       icon: Search,
@@ -75,7 +75,7 @@ export default function About() {
     { title: "ISO 27001 Lead Auditor", icon: Award },
     { title: "GDPR Certified Consultant", icon: Lock },
     { title: "AWS Security Specialist", icon: Shield },
-    { title: "200+ Projects Delivered", icon: CheckCircle }
+    { title: "Proven Track Record", icon: CheckCircle }
   ];
 
   return (
@@ -95,7 +95,7 @@ export default function About() {
             </h1>
             <p className="text-xl text-[#1E1E1E] leading-relaxed mb-8 max-w-3xl mx-auto">
               We&apos;re Europe&apos;s leading AI-powered digital agency and cybersecurity consultancy, 
-              trusted by 200+ enterprise clients to deliver transformational results through 
+              trusted by innovative businesses to deliver transformational results through 
               cutting-edge technology and uncompromising security.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

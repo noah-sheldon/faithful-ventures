@@ -289,7 +289,7 @@ export default function Blog() {
           <h2 className="text-4xl font-bold mb-6">Stay Updated with Industry Insights</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-green-100">
             Get weekly insights on AI, cybersecurity, and digital transformation delivered to your inbox. 
-            Join 2,000+ professionals staying ahead of the curve.
+            Join innovative professionals staying ahead of the curve.
           </p>
           
           <div className="max-w-md mx-auto">

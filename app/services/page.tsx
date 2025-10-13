@@ -10,10 +10,7 @@ import {
   Scale,
   ArrowRight,
   CheckCircle,
-  Star,
-  TrendingUp,
-  Zap,
-  Users
+  Star
 } from "lucide-react";
 import Link from "next/link";
 
@@ -83,12 +80,6 @@ export default function Services() {
     }
   ];
 
-  const stats = [
-    { number: "200+", label: "Projects Delivered", icon: TrendingUp },
-    { number: "95%", label: "Client Satisfaction", icon: Star },
-    { number: "50+", label: "Enterprise Clients", icon: Users },
-    { number: "24/7", label: "Support Available", icon: Zap }
-  ];
 
   return (
     <main className="flex flex-col min-h-screen bg-white">
@@ -130,29 +121,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="w-full py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, idx) => {
-              const IconComponent = stat.icon;
-              return (
-                <div key={idx} className="text-center">
-                  <div className="mx-auto mb-4 p-3 rounded-full bg-green-50 w-16 h-16 flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-[#0074D9]" />
-                  </div>
-                  <div className="text-3xl font-bold text-black mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-[#1E1E1E] font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Services Sections */}
       {serviceCategories.map((category, categoryIdx) => (
@@ -305,7 +273,7 @@ export default function Services() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4 text-green-500" />
-              <span>200+ successful projects</span>
+              <span>Quality-focused solutions</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4 text-green-500" />

@@ -5,15 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import { 
   ArrowRight, 
   CheckCircle, 
-  Star, 
   Shield, 
   Bot, 
   Code, 
-  Search,
-  Zap,
-  Globe,
-  Award,
-  TrendingUp
+  Search
 } from "lucide-react";
 import Link from "next/link";
 
@@ -47,33 +42,7 @@ export default function Home() {
     }
   ];
 
-  const testimonials = [
-    {
-      quote: "FaithfulVC transformed our digital presence completely. Their AI automation saved us £200k annually while improving customer satisfaction by 40%.",
-      author: "Sarah Mitchell",
-      title: "CTO, TechFlow Solutions",
-      rating: 5
-    },
-    {
-      quote: "The cybersecurity audit identified critical vulnerabilities we never knew existed. Their team&apos;s expertise is unmatched in the European market.",
-      author: "David Chen",
-      title: "CISO, FinanceSecure",
-      rating: 5
-    },
-    {
-      quote: "From concept to launch in 8 weeks. The website they built generates 3x more leads than our previous one. Exceptional work!",
-      author: "Emma Thompson",
-      title: "CEO, GreenTech Innovations",
-      rating: 5
-    }
-  ];
 
-  const stats = [
-    { number: "200+", label: "Projects Delivered", icon: TrendingUp },
-    { number: "£50M+", label: "Client Revenue Generated", icon: Award },
-    { number: "99.9%", label: "Uptime Guaranteed", icon: Zap },
-    { number: "24/7", label: "Expert Support", icon: Globe }
-  ];
 
   return (
     <main className="flex flex-col min-h-screen bg-white">
@@ -93,7 +62,7 @@ export default function Home() {
             </h1>
             <p className="text-xl leading-relaxed mb-8 text-white/90 max-w-3xl mx-auto">
               Transform your business with cutting-edge AI automation, custom web development, 
-              and enterprise-grade cybersecurity. Trusted by 200+ companies across Europe & UK.
+              and enterprise-grade cybersecurity. Trusted by growing businesses across Europe & UK.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -120,29 +89,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="w-full py-16 bg-slate-50/50">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, idx) => {
-              const IconComponent = stat.icon;
-              return (
-                <div key={idx} className="text-center">
-                  <div className="mx-auto mb-4 p-4 rounded-2xl bg-gradient-to-br from-[#00C2A8]/10 to-[#0074D9]/10 w-20 h-20 flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-[#0074D9]" />
-                  </div>
-                  <div className="text-3xl font-bold text-black mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-[#1E1E1E] font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="w-full py-20 bg-white">
@@ -157,11 +103,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
             {services.map((service, idx) => {
               const IconComponent = service.icon;
               return (
-                <Card key={idx} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg relative h-full rounded-2xl overflow-hidden">
+                <Card key={idx} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg relative flex flex-col h-full rounded-2xl overflow-hidden">
                   {service.badge && (
                     <div className="absolute -top-3 left-6 z-10">
                       <Badge className="bg-gradient-to-r from-[#B0FF72] to-[#FFA94D] text-black px-3 py-1 rounded-full">
@@ -178,8 +124,8 @@ export default function Home() {
                       {service.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="flex-1 flex flex-col relative z-10">
-                    <p className="text-[#1E1E1E] mb-6 leading-relaxed text-center flex-1">
+                  <CardContent className="flex-1 flex flex-col justify-between relative z-10 p-6">
+                    <p className="text-[#1E1E1E] mb-6 leading-relaxed text-center">
                       {service.description}
                     </p>
                     <Button 
@@ -200,89 +146,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Case Study */}
-      <section className="w-full py-20 bg-gradient-to-br from-slate-50 to-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-black mb-6">Client Success Story</h2>
-            <p className="text-xl text-[#1E1E1E] max-w-3xl mx-auto">
-              How we helped a SaaS company achieve 300% revenue growth through AI automation
-            </p>
-          </div>
 
-          <Card className="max-w-4xl mx-auto border-0 shadow-2xl rounded-2xl overflow-hidden">
-            <div className="bg-gradient-to-r from-[#00C2A8] to-[#0074D9] p-12 text-white">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                  <div className="text-4xl font-bold mb-2">300%</div>
-                  <div className="text-white/80">Revenue Growth</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold mb-2">£2M</div>
-                  <div className="text-white/80">Annual Savings</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold mb-2">60%</div>
-                  <div className="text-white/80">Faster Processes</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold mb-2">8 Weeks</div>
-                  <div className="text-white/80">Implementation</div>
-                </div>
-              </div>
-            </div>
-            <CardContent className="p-12">
-              <h3 className="text-2xl font-bold text-black mb-4">
-                AI-Powered Customer Service Transformation
-              </h3>
-              <p className="text-[#1E1E1E] leading-relaxed mb-6">
-                TechFlow Solutions approached us with manual customer service processes that were 
-                limiting their growth. We implemented an AI chatbot system that handles 80% of 
-                customer inquiries automatically, while integrating seamlessly with their existing CRM.
-              </p>
-              <Button 
-                asChild 
-                className="bg-gradient-to-r from-[#00C2A8] to-[#0074D9] text-white hover:scale-105 transform transition-all duration-300 rounded-xl"
-              >
-                <Link href="/portfolio" className="flex items-center gap-2">
-                  Read Full Case Study
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Testimonials */}
+      {/* What We Offer */}
       <section className="w-full py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-black mb-6">Trusted by Industry Leaders</h2>
+            <h2 className="text-5xl font-bold text-black mb-6">What We Can Deliver</h2>
             <p className="text-xl text-[#1E1E1E] max-w-3xl mx-auto">
-              Join 200+ companies that have transformed their business with our expertise
+              Modern solutions designed to transform your business operations and growth
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, idx) => (
-              <Card key={idx} className="border-0 shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl h-full">
-                <CardContent className="p-8 h-full flex flex-col">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-[#FFA94D] fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="text-[#1E1E1E] text-lg leading-relaxed mb-6 italic flex-1">
-                    &quot;{testimonial.quote}&quot;
-                  </blockquote>
-                  <div className="border-t pt-4">
-                    <p className="font-semibold text-black">{testimonial.author}</p>
-                    <p className="text-[#0074D9] font-medium">{testimonial.title}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="border-0 shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl h-full">
+              <CardContent className="p-8 h-full flex flex-col">
+                <div className="flex mb-4">
+                  <CheckCircle className="w-6 h-6 text-[#00C2A8]" />
+                </div>
+                <h3 className="text-xl font-bold text-black mb-4">Modern Web Solutions</h3>
+                <p className="text-[#1E1E1E] text-lg leading-relaxed mb-6 flex-1">
+                  Custom websites and applications built with cutting-edge technologies like Next.js, React, and TypeScript for optimal performance and user experience.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl h-full">
+              <CardContent className="p-8 h-full flex flex-col">
+                <div className="flex mb-4">
+                  <CheckCircle className="w-6 h-6 text-[#00C2A8]" />
+                </div>
+                <h3 className="text-xl font-bold text-black mb-4">AI-Powered Automation</h3>
+                <p className="text-[#1E1E1E] text-lg leading-relaxed mb-6 flex-1">
+                  Intelligent systems that streamline your operations, reduce manual work, and improve efficiency through machine learning and process automation.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl h-full">
+              <CardContent className="p-8 h-full flex flex-col">
+                <div className="flex mb-4">
+                  <CheckCircle className="w-6 h-6 text-[#00C2A8]" />
+                </div>
+                <h3 className="text-xl font-bold text-black mb-4">Enterprise Security</h3>
+                <p className="text-[#1E1E1E] text-lg leading-relaxed mb-6 flex-1">
+                  Comprehensive security assessments, penetration testing, and compliance solutions to protect your business and meet regulatory requirements.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -498,7 +498,7 @@ export default function Contact() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "100+ successful projects delivered",
+                    "Quality-focused project delivery",
                     "ISO 27001 certified security experts",
                     "Average 150% increase in client ROI",
                     "24-hour response guarantee",
@@ -548,7 +548,7 @@ export default function Contact() {
                   Do you work with startups or only enterprises?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 leading-relaxed">
-                  We work with businesses of all sizes, from startups to Fortune 500 companies. Our services are tailored to match your budget and growth stage.
+                  We work with businesses of all sizes, from startups to enterprise companies. Our services are tailored to match your budget and growth stage.
                 </AccordionContent>
               </AccordionItem>
 
@@ -633,7 +633,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-green-300" />
-              <span>Trusted by 100+ businesses</span>
+              <span>Trusted by innovative businesses</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4 text-green-300" />
