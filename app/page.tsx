@@ -109,8 +109,8 @@ export default function Home() {
               return (
                 <Card key={idx} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg relative flex flex-col h-full rounded-2xl overflow-hidden">
                   {service.badge && (
-                    <div className="absolute -top-3 left-6 z-10">
-                      <Badge className="bg-gradient-to-r from-[#B0FF72] to-[#FFA94D] text-black px-3 py-1 rounded-full">
+                    <div className="absolute top-4 left-6 z-20">
+                      <Badge className="bg-gradient-to-r from-[#B0FF72] to-[#FFA94D] text-black px-3 py-1 rounded-full shadow-lg font-semibold">
                         {service.badge}
                       </Badge>
                     </div>
