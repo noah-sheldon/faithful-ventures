@@ -133,7 +133,7 @@ export default function About() {
               enterprise-grade cybersecurity that creates competitive advantages, 
               reduces operational costs, and ensures resilient growth in an increasingly digital world.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
               <div className="text-center">
                 <div className="mx-auto mb-4 p-4 rounded-2xl bg-gradient-to-br from-[#00C2A8]/10 to-[#0074D9]/10 w-20 h-20 flex items-center justify-center">
                   <Brain className="w-10 h-10 text-[#0074D9]" />
