@@ -283,7 +283,7 @@ export default function About() {
               variant="outline"
               size="lg"
               asChild
-              className="border-white text-white hover:bg-white hover:text-[#0074D9] px-8 py-4 text-lg font-semibold rounded-full"
+              className="border-white/80 text-white bg-white/10 hover:bg-white hover:text-[#0074D9] px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
             >
               <Link href="/contact">
                 Get Custom Quote
