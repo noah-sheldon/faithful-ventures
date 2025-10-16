@@ -258,7 +258,7 @@ export default function Services() {
               variant="outline"
               size="lg"
               asChild
-              className="border-[#0074D9]/30 text-[#0074D9] hover:bg-gradient-to-r hover:from-[#00C2A8] hover:to-[#0074D9] hover:text-white px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
+              className="border-[#0074D9]/50 text-[#0074D9] hover:bg-gradient-to-r hover:from-[#00C2A8] hover:to-[#0074D9] hover:text-white px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
             >
               <Link href="/contact">
                 Get Custom Quote
