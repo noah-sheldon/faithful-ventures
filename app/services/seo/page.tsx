@@ -115,7 +115,7 @@ export default function SEO() {
                 icon: Globe,
                 title: "Content Marketing",
                 description: "Engaging, SEO-optimized content that educates your audience and drives traffic.",
-                features: ["Blog Content", "Landing Pages", "Resource Guides", "Video SEO"]
+                features: ["Landing Pages", "Resource Guides", "Video SEO", "Content Strategy"]
               },
               {
                 icon: BarChart3,
@@ -445,7 +445,7 @@ export default function SEO() {
                     "Product page optimization for 500+ items",
                     "Content marketing strategy with buying guides",
                     "Local SEO for London-based searches",
-                    "Link building campaign with fashion blogs",
+                    "Link building campaign with industry publications",
                     "Site speed optimization (40% improvement)"
                   ].map((action, idx) => (
                     <div key={idx} className="flex items-center">
@@ -483,7 +483,7 @@ export default function SEO() {
               variant="outline"
               size="lg"
               asChild
-              className="border-white text-white hover:bg-white hover:text-green-600 px-8 py-4 text-lg font-semibold"
+              className="border-white/80 text-white bg-white/10 hover:bg-white hover:text-green-600 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
             >
               <Link href="/contact">
                 Discuss Your Goals

@@ -553,7 +553,7 @@ export default function Compliance() {
               variant="outline"
               size="lg"
               asChild
-              className="border-white text-white hover:bg-white hover:text-green-600 px-8 py-4 text-lg font-semibold"
+              className="border-white/80 text-white bg-white/10 hover:bg-white hover:text-green-600 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
             >
               <Link href="/contact">
                 Discuss Your Requirements
